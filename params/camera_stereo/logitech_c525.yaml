@@ -1,0 +1,11 @@
+camera_name: logitech_c525
+frame_width: 640
+frame_height: 480
+fps: 20
+# Check available pixel formats with (e.g. for /dev/video0):
+# v4l2-ctl -d /dev/video0 --list-formats
+# Typical values are: YUYV, MJPG (compressed)
+frame_id: stereo_optical
+camera_info_url_left: package://stereo_obstacle_detection/calibration/camera_stereo/${NAME}.yaml
+camera_info_url_right: package://stereo_obstacle_detection/calibration/camera_stereo/${NAME}.yaml
+

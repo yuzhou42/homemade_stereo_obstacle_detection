@@ -1,0 +1,11 @@
+<!-- -->
+<launch>
+
+  <!--node pkg="rosbag" type="play" name="rosbag" args="-clock /home/nico/2016-07-01-11-10-52.bag"/-->
+  <node name="extract" pkg="image_view" type="extract_images" respawn="false" output="screen" cwd="ROS_HOME">
+
+    <remap from="image" to="/filtered/left"/>
+
+  </node>
+
+</launch>
